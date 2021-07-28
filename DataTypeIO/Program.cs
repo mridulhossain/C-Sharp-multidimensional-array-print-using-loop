@@ -6,6 +6,19 @@ namespace DataTypeIO
     {
         static void Main(string[] args)
         {
+
+
+            //------------------start a array ----------------------
+
+            int[,,] a = new int[10, 11, 12];
+
+            Console.WriteLine(a.Length);           // 1320(total -> 10*11*12)
+            Console.WriteLine(a.GetLength(0));     // 10 -> row count
+            Console.WriteLine(a.GetLength(1));     // 11 -> inner row array count
+            Console.WriteLine(a.GetLength(2));     // 12 -> single element length
+
+            //------------------end a array ----------------------
+
             int[,,] threeDarray = new int[2, 2, 3]{
                 { { 1, 2,0}, {4, 5, 1} },
                 { { 7, 8, 2}, {10, 11, 3} }
